@@ -23,6 +23,7 @@ public class ConnectionPortController  extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+
             String action = req.getParameter("action");
             if(action.equalsIgnoreCase(HttpRequestList.ALL.toString())){
                 ConnectionPort connectionPort = connectionPortDao.findById(1);
@@ -70,6 +71,6 @@ public class ConnectionPortController  extends HttpServlet {
 
         ConnectionPort connectionPort = connectionPortDao.findById(1);
         req.setAttribute("connectionPort", connectionPort);
-        req.getRequestDispatcher("connectionPort/index.jsp").forward(req,resp);
+        req.getRequestDispatcher("connectionPort/main.jsp").forward(req,resp);
     }
 }

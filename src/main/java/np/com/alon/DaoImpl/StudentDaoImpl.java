@@ -161,7 +161,6 @@ public class StudentDaoImpl implements StudentDao {
             String query = "select count(*) from student";
             PreparedStatement preparedStatement = dbConnection.getPreparedStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
-            System.out.println("resultSet = " + resultSet);
             int count = 0;
             while (resultSet.next()){
                  count = resultSet.getInt("count(*)");
