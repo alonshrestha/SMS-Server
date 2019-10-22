@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->
@@ -42,7 +43,13 @@
         <%@include file="/Design/Login/vendor/daterangepicker/daterangepicker.css" %>
         <%@include file="/Design/Login/vendor/select2/select2.min.css" %>
         <%@include file="/Design/Login/css/main.css" %>
-<%--        <%@include file="/Design/Login/css/util.css" %>--%>
+        <%--        <%@include file="/Design/Login/css/util.css" %>--%>
+    </style>
+
+    <style>
+        * {
+            font-family: 'Lato', sans-serif !important;
+        }
     </style>
 
     <script type="text/javascript">
@@ -61,19 +68,18 @@
 </head>
 <body>
 
+
+
 <div class="limiter">
     <div class="container-login100">
         <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
-
-            <c:if test="${errorMessage}">
-                INvalid username and password
-            </c:if>
-            <form class="login100-form validate-form"  action="${pageContext.request.contextPath}/loginCheck" method="post">
-					<span class="login100-form-title p-b-33">
+            <form class="login100-form validate-form" action="${pageContext.request.contextPath}/loginCheck"
+                  method="post">
+					<span class="login100-form-title p-b-33" style="margin:15px 0">
 						Account Login
 					</span>
 
-                <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                     <input class="input100" type="text" name="username" placeholder="Username">
                     <span class="focus-input100-1"></span>
                     <span class="focus-input100-2"></span>
@@ -86,12 +92,15 @@
                 </div>
 
                 <div class="container-login100-form-btn m-t-20">
-                    <button class="login100-form-btn">
+                    <button class="login100-form-btn" style="font-size: 20px">
                         Sign in
                     </button>
                 </div>
-                </div>
             </form>
+            <c:if test="${errorMessage}">
+                <div class="row font-weight-bold text-danger" style="margin: 10px 0 10px 130px">Invalid Username and Password</div>
+            </c:if>
+
         </div>
     </div>
 </div>

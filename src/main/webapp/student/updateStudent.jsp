@@ -5,10 +5,10 @@
 <jsp:include page="../headers/header.jsp"/>
 <div class="main">
     <div class="container">
-        <div class="row">
-            <a href="${pageContext.request.contextPath}/students" class="btn btn-success float-right">Message List</a>
-        </div>
-
+<%--        <div class="row">--%>
+<%--            <a href="${pageContext.request.contextPath}/students" class="btn btn-success float-right">Message List</a>--%>
+<%--        </div>--%>
+        <br>
         <form action="${pageContext.request.contextPath}/students" method="post">
             <input type="hidden" name="action" value="${HttpRequestList.UPDATE.toString()}"/>
             <input type="hidden" name="id" value="${student.id}"/>
@@ -49,7 +49,7 @@
                     </c:forEach>
                 </select>
             </div>
-
+            <br>
             <input type="submit" value="Update" class="btn btn-primary"/>
         </form>
     </div>

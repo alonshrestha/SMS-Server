@@ -4,10 +4,12 @@
 <jsp:include page="../headers/header.jsp"/>
 <div class="main">
     <div class="container">
-        <div class="row">
+        <br>
+        <div class="row m-auto">
             <a href="${pageContext.request.contextPath}/students?action=${HttpRequestList.ADD.toString()}" class="btn btn-success float-right">Add Student</a>
         </div>
-        <table class="table table-bordered">
+        <br>
+        <table class="table table-bordered table-hover table-striped">
             <tr>
                 <td>S.N</td>
                 <td>First name</td>
@@ -27,7 +29,7 @@
                         <a href="${pageContext.request.contextPath}/students?action=${HttpRequestList.UPDATE.toString()}&id=${s.id}"
                            class="btn btn-success"
                         >
-                            Update
+                            Edit
                         </a>
 
                         <a href="${pageContext.request.contextPath}/students?action=${HttpRequestList.DELETE.toString()}&id=${s.id}"

@@ -4,10 +4,12 @@
 <jsp:include page="../headers/header.jsp"/>
 <div class="main">
     <div class="container">
-        <div class="row">
+       <br>
+        <div class="row m-auto">
             <a href="${pageContext.request.contextPath}/connectionPorts?action=${HttpRequestList.ADD.toString()}" class="btn btn-success float-right">Add Port</a>
         </div>
-        <table class="table table-bordered">
+        <br>
+        <table class="table table-bordered table-striped table-hover table-light">
             <tr>
                 <td>S.N</td>
                 <td>Port Number</td>
@@ -23,7 +25,7 @@
                         <a href="${pageContext.request.contextPath}/connectionPorts?action=${HttpRequestList.UPDATE.toString()}&id=${connectionPort.id}"
                            class="btn btn-success"
                         >
-                            Update
+                            Edit
                         </a>
 
 
