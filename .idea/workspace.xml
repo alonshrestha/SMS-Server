@@ -7,30 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7254ff8c-7846-4d74-b6f2-4b0a93965980" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/StartUpApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/DaoImpl/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/DaoImpl/StudentDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/StartUp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/ConnectionPortController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/ConnectionPortController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/LogoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/LogoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/DaoImpl/StudentDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/np/com/alon/DaoImpl/StudentDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/StartUp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/controller/ConnectionPortController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/np/com/alon/controller/ConnectionPortController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/controller/LogoutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/np/com/alon/controller/LogoutController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/np/com/alon/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/DaoImpl/StudentDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/DaoImpl/StudentDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/StartUp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/controller/ConnectionPortController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/controller/ConnectionPortController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/controller/LogoutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/controller/LogoutController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/message/addMessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/message/addMessage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/message/updateMessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/message/updateMessage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sendMessage/messageFromTemplate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sendMessage/messageFromTemplate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/addStudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/addStudent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/updateStudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/updateStudent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/message/addMessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/message/addMessage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/message/updateMessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/message/updateMessage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/sendMessage/messageFromTemplate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/sendMessage/messageFromTemplate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/student/addStudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/student/addStudent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/student/updateStudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/student/updateStudent.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -338,7 +325,8 @@
       <workItem from="1571634637757" duration="28190000" />
       <workItem from="1571719575954" duration="8435000" />
       <workItem from="1571735272678" duration="11537000" />
-      <workItem from="1571757781910" duration="397000" />
+      <workItem from="1571757781910" duration="782000" />
+      <workItem from="1571804421774" duration="9624000" />
     </task>
     <servers />
   </component>

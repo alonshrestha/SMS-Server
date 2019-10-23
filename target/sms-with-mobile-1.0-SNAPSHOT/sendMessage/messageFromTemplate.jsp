@@ -12,7 +12,7 @@
         <div class="row">
         </div>
     <br>
-        <form action="${pageContext.request.contextPath}/mmm" method="post">
+        <form  action="${pageContext.request.contextPath}/mmm" method="post">
             <input type="hidden" name="action" value="${HttpRequestList.MESSAGE_FROM_TEMPLATE.toString()}"/>
             <div class="row form-row">
                 <label>Select Grade</label>
@@ -36,3 +36,4 @@
         </form>
     </div>
 </div>
+

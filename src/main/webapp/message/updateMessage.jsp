@@ -8,7 +8,7 @@
 <%--            <a href="${pageContext.request.contextPath}/addMessage" class="btn btn-success float-right">Message List</a>--%>
 <%--        </div>--%>
 
-        <form  style="margin-top: 30px" action="${pageContext.request.contextPath}/addMessage" method="post">
+        <form name="myform" style="margin-top: 30px" action="${pageContext.request.contextPath}/addMessage" method="post" onsubmit="return validateform()">
             <input type="hidden" name="action" value="${HttpRequestList.UPDATE.toString()}"/>
             <input type="hidden" name="id" value="${messageTemplate.id}"/>
             <div class="row form-row">
@@ -24,3 +24,19 @@
         </form>
     </div>
 </div>
+
+
+<script>
+    function validateform(){
+        var mtitle=document.myform.title.value;
+        var mbody=document.myform.messageBody.value;
+        if (mtitle==null || mtitle==""){
+            alert("Please Enter Message Title");
+            return false;
+        }
+        if(mbody.length>160){
+            alert("Cannot accept more than 160 Character.");
+            return false;
+        }
+    }
+</script>
