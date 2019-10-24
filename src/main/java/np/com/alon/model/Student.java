@@ -8,6 +8,15 @@ public class Student {
    private String parentName;
    private String parentPhoneNumber;
    private int gradeId;
+   private String gradeName;
+
+    public String getGradeName() {
+        return gradeName;
+    }
+
+    public void setGradeName(String gradeName) {
+        this.gradeName = gradeName;
+    }
 
     public Student() {
     }

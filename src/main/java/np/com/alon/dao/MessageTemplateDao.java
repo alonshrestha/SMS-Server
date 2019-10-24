@@ -10,5 +10,6 @@ public interface MessageTemplateDao {
     boolean delete(int id);
     List<MessageTemplate> findAll();
     MessageTemplate findById(int id);
+    int count();
 
 }

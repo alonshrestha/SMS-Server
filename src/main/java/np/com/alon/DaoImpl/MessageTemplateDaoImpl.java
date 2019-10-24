@@ -108,4 +108,24 @@ public class MessageTemplateDaoImpl implements MessageTemplateDao {
 
         return null;
     }
+
+    public int count() {
+
+        try {
+            dbConnection.open();
+            String query = "select count(*) from message_type";
+            PreparedStatement preparedStatement = dbConnection.getPreparedStatement(query);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            int count = 0;
+            while (resultSet.next()){
+                count = resultSet.getInt("count(*)");
+            }
+            return count;
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
 }

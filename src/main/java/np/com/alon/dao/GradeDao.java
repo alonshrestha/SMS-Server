@@ -11,4 +11,5 @@ public interface GradeDao {
     boolean delete(int id);
     List<Grade> findAll();
     Grade findById(int id);
+    int count();
 }

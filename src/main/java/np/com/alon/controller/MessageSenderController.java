@@ -65,13 +65,14 @@ MessageTemplateDao messageTemplateDao =new MessageTemplateDaoImpl();
             MessageTemplate messageTemplate = messageTemplateDao.findById(Integer.parseInt(messageTemplateId));
             System.out.println("grade = " + grade);
             List<Student> students = studentDao.findByGrade(Integer.parseInt(grade));
-            List<String> phoneNumberList = new ArrayList<String>();
-            for(Student student: students){
-                phoneNumberList.add(student.getParentPhoneNumber());
-            }
+            System.out.println("students = " + students);
+//            List<String> phoneNumberList = new ArrayList<String>();
+//            for(Student student: students){
+//                phoneNumberList.add(student.getParentPhoneNumber());
+//            }
 
             try {
-                smsSender.sendMultipleMessage(phoneNumberList,messageTemplate.getMessageBody());
+                smsSender.sendMultipleMessage(students,messageTemplate.getMessageBody());
             } catch (Exception e) {
                 e.printStackTrace();
             }

@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 @WebServlet(urlPatterns = "/students")
 public class StudentController  extends HttpServlet {
@@ -37,7 +39,16 @@ public class StudentController  extends HttpServlet {
             req.setAttribute("studentList",studentDao.findAll());
             req.getRequestDispatcher("student/index.jsp").forward(req,resp);
         }else if(action.equalsIgnoreCase(HttpRequestList.ALL.toString())){
-            req.setAttribute("studentList",studentDao.findAll());
+          List<Student> studentList = new ArrayList<Student>();
+
+            for(Student student : studentDao.findAll()){
+                student.setGradeName(gradeDao.findById(student.getGradeId()).getName());
+                studentList.add(student);
+            }
+
+            req.setAttribute("studentList",studentList);
+
+
             req.getRequestDispatcher("student/index.jsp").forward(req,resp);
         }
     }
@@ -69,8 +80,13 @@ public class StudentController  extends HttpServlet {
             studentDao.update(student);
 
         }
+        List<Student> studentList = new ArrayList<Student>();
 
-        req.setAttribute("studentList",studentDao.findAll());
+        for(Student student : studentDao.findAll()){
+            student.setGradeName(gradeDao.findById(student.getGradeId()).getName());
+            studentList.add(student);
+        }
+        req.setAttribute("studentList",studentList);
         req.getRequestDispatcher("student/index.jsp").forward(req,resp);
 
     }

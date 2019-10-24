@@ -7,17 +7,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7254ff8c-7846-4d74-b6f2-4b0a93965980" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/DaoImpl/MessageSentStatusDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/dao/MessageSentStatusDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/model/MessageSentStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/DaoImpl/GradeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/DaoImpl/GradeDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/DaoImpl/MessageTemplateDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/DaoImpl/MessageTemplateDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/DaoImpl/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/DaoImpl/StudentDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/ConnectionPortController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/ConnectionPortController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/MessageSenderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/MessageSenderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/StartUpApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/StartUpApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/dao/GradeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/dao/GradeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/dao/MessageTemplateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/dao/MessageTemplateDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/dbconnection/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/dbconnection/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/np/com/alon/smss/Sms1Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/np/com/alon/smss/Sms1Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/headers/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/headers/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/message/addMessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/message/addMessage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/message/updateMessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/message/updateMessage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/sendMessage/messageFromTemplate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sendMessage/messageFromTemplate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/addStudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/addStudent.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/updateStudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/updateStudent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/sendMessage/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/sendMessage/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/student/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/student/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/DaoImpl/GradeDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/np/com/alon/DaoImpl/GradeDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/DaoImpl/MessageTemplateDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/np/com/alon/DaoImpl/MessageTemplateDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/controller/ConnectionPortController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/np/com/alon/controller/ConnectionPortController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/controller/MessageSenderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/np/com/alon/controller/MessageSenderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/controller/StartUpApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/np/com/alon/controller/StartUpApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/np/com/alon/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/dao/GradeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/np/com/alon/dao/GradeDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/dao/MessageTemplateDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/np/com/alon/dao/MessageTemplateDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/dbconnection/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/np/com/alon/dbconnection/DBConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/smss/Sms1Sender$OutboundNotification.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/np/com/alon/smss/Sms1Sender$OutboundNotification.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/np/com/alon/smss/Sms1Sender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/np/com/alon/smss/Sms1Sender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/DaoImpl/GradeDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/DaoImpl/GradeDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/DaoImpl/MessageTemplateDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/DaoImpl/MessageTemplateDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/controller/ConnectionPortController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/controller/ConnectionPortController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/controller/MessageSenderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/controller/MessageSenderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/controller/StartUpApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/controller/StartUpApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/dao/GradeDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/dao/GradeDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/dao/MessageTemplateDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/dao/MessageTemplateDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/dbconnection/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/dbconnection/DBConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/smss/Sms1Sender$OutboundNotification.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/smss/Sms1Sender$OutboundNotification.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/smss/Sms1Sender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/WEB-INF/classes/np/com/alon/smss/Sms1Sender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/headers/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/headers/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/message/addMessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/message/addMessage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/message/updateMessage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/message/updateMessage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/sendMessage/messageFromTemplate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/sendMessage/messageFromTemplate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/student/addStudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/student/addStudent.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/student/updateStudent.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/student/updateStudent.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/sendMessage/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/sms-with-mobile-1.0-SNAPSHOT/sendMessage/index.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,10 +180,8 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\SMS-Final-Project\sms\target\sms-with-mobile-1.0-SNAPSHOT\message" />
-      <recent name="D:\SMS-Final-Project\sms\src\main\webapp" />
-      <recent name="D:\SMS-Final-Project\sms\src\main\webapp\headers" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="np.com.alon.enumlist" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SMS-Final-Project\sms\src\main\webapp" />
@@ -153,8 +190,10 @@
       <recent name="D:\SMS-Final-Project\sms\src\main\webapp\headers" />
       <recent name="D:\SMS-Final-Project\sms\src\main\webapp\Design\sidebar-style" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="np.com.alon.enumlist" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SMS-Final-Project\sms\target\sms-with-mobile-1.0-SNAPSHOT\message" />
+      <recent name="D:\SMS-Final-Project\sms\src\main\webapp" />
+      <recent name="D:\SMS-Final-Project\sms\src\main\webapp\headers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -326,7 +365,11 @@
       <workItem from="1571719575954" duration="8435000" />
       <workItem from="1571735272678" duration="11537000" />
       <workItem from="1571757781910" duration="782000" />
-      <workItem from="1571804421774" duration="9624000" />
+      <workItem from="1571804421774" duration="9760000" />
+      <workItem from="1571820142612" duration="4236000" />
+      <workItem from="1571834771439" duration="7141000" />
+      <workItem from="1571845547511" duration="6142000" />
+      <workItem from="1571890315885" duration="4491000" />
     </task>
     <servers />
   </component>

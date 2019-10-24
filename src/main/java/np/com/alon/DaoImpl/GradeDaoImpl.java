@@ -100,4 +100,24 @@ public class GradeDaoImpl implements GradeDao {
         }
         return null;
     }
+
+    public int count() {
+
+        try {
+            dbConnection.open();
+            String query = "select count(*) from grade";
+            PreparedStatement preparedStatement = dbConnection.getPreparedStatement(query);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            int count = 0;
+            while (resultSet.next()){
+                count = resultSet.getInt("count(*)");
+            }
+            return count;
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
 }

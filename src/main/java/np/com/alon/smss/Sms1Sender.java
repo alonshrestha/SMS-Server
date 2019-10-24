@@ -1,7 +1,11 @@
 package np.com.alon.smss;
 import np.com.alon.DaoImpl.ConnectionPortDaoImpl;
+import np.com.alon.DaoImpl.MessageSentStatusDaoImpl;
 import np.com.alon.dao.ConnectionPortDao;
+import np.com.alon.dao.MessageSentStatusDao;
 import np.com.alon.model.ConnectionPort;
+import np.com.alon.model.MessageSentStatus;
+import np.com.alon.model.Student;
 import org.smslib.*;
 import org.smslib.modem.SerialModemGateway;
 
@@ -12,27 +16,16 @@ public class Sms1Sender {
 
 
 
-    public void openPort() throws SMSLibException, InterruptedException, IOException {
-        ConnectionPort connectionPort = connectionPortDao.findById(1);
-        System.out.println("connectionPort open");
-        OutboundNotification outboundNotification = new OutboundNotification();
-
-        SerialModemGateway gateway = new SerialModemGateway("modem.com1", connectionPort.getPortNumber(), Integer.parseInt(connectionPort.getByteLimit()), "Samsung", "J7Prime");
-        gateway.setInbound(true);
-        gateway.setOutbound(true);
-        gateway.setSimPin("0000");
-        gateway.setSmscNumber("+9779818373839");
-        Service.getInstance().setOutboundMessageNotification(outboundNotification);
-        Service.getInstance().addGateway(gateway);
-        Service.getInstance().startService();
-        System.out.println();
-        System.out.println("Modem Information:");
-    }
 
     ConnectionPortDao connectionPortDao = new ConnectionPortDaoImpl();
+    MessageSentStatusDao messageSentStatusDao = new MessageSentStatusDaoImpl();
+
 
     public void doIt(String phoneNo, String message) throws Exception
     {
+
+
+        ConnectionPort connectionPort = connectionPortDao.findById(1);
 
 //		OutboundMessage msg;
 //		OutboundNotification outboundNotification = new OutboundNotification();
@@ -45,40 +38,38 @@ public class Sms1Sender {
 //                OutboundMessage message = new OutboundMessage("+9779862073776", "Test");
 //                Service.getInstance().sendMessage(message);
 
+        OutboundNotification outboundNotification = new OutboundNotification();
         System.out.println("Example: Send message from a serial gsm modem.");
         System.out.println(Library.getLibraryDescription());
         System.out.println("Version: " + Library.getLibraryVersion());
-
-
-//		System.out.println("  Manufacturer: " + gateway.getManufacturer());
-//		System.out.println("  Model: " + gateway.getModel());
-//		System.out.println("  Serial No: " + gateway.getSerialNo());
-//		System.out.println("  SIM IMSI: " + gateway.getImsi());
-//		System.out.println("  Signal Level: " + gateway.getSignalLevel() + " dBm");
-//		System.out.println("  Battery Level: " + gateway.getBatteryLevel() + "%");
+        SerialModemGateway gateway = new SerialModemGateway("modem.com1", connectionPort.getPortNumber(), Integer.parseInt(connectionPort.getByteLimit()), "Samsung", "J7Prime");
+        gateway.setInbound(true);
+        gateway.setOutbound(true);
+        gateway.setSimPin("0000");
+        // Explicit SMSC address set is required for some modems.
+        // Below is for VODAFONE GREECE - be sure to set your own!
+        gateway.setSmscNumber("+9779818373839");
+        Service.getInstance().setOutboundMessageNotification(outboundNotification);
+        Service.getInstance().addGateway(gateway);
+        Service.getInstance().startService();
         System.out.println();
-
+        System.out.println("Modem Information:");
+        System.out.println();
+        System.out.println("Now Sleeping - Hit <enter> to terminate.");
         OutboundMessage msg = new OutboundMessage(phoneNo, message);
         Service.getInstance().sendMessage(msg);
+        MessageSentStatus messageSentStatus = new MessageSentStatus();
+        messageSentStatus.setPhoneNumber(phoneNo);
+        messageSentStatus.setMessageBody(message);
+        messageSentStatusDao.add(messageSentStatus);
         System.out.println(msg);
-        // Or, send out a WAP SI message.f
-        //OutboundWapSIMessage wapMsg = new OutboundWapSIMessage("306974000000",  new URL("http://www.smslib.org/"), "Visit SMSLib now!");
-        //Service.getInstance().sendMessage(wapMsg);
-        //System.out.println(wapMsg);
-        // You can also queue some asynchronous messages to see how the callbacks
-        // are called...
-        //msg = new OutboundMessage("309999999999", "Wrong number!");
-        //srv.queueMessage(msg, gateway.getGatewayId());
-        //msg = new OutboundMessage("308888888888", "Wrong number!");
-        //srv.queueMessage(msg, gateway.getGatewayId());
-        System.out.println("Now Sleeping - Hit <enter> to terminate.");
         System.in.read();
         Service.getInstance().stopService();
     }
 
 
 
-    public void sendMultipleMessage(List<String> phoneNo, String message) throws Exception
+    public void sendMultipleMessage(List<Student> studentList, String message) throws Exception
     {
         ConnectionPort connectionPort = connectionPortDao.findById(1);
 
@@ -110,9 +101,16 @@ public class Sms1Sender {
         System.out.println();
         System.out.println("Modem Information:");
         System.out.println();
-        for(String s: phoneNo){
-            OutboundMessage msg = new OutboundMessage(s, message);
+        for(Student s: studentList){
+            System.out.println("s.getParentName() = " + s.getParentName());
+            String newmessage = "Dear "+s.getParentName()+" Ji, \n \n \n"+message;
+            System.out.println("newmessage = " + newmessage);
+                    OutboundMessage msg = new OutboundMessage(s.getParentPhoneNumber(), newmessage);
             Service.getInstance().sendMessage(msg);
+            MessageSentStatus messageSentStatus = new MessageSentStatus();
+            messageSentStatus.setPhoneNumber(s.getParentPhoneNumber());
+            messageSentStatus.setMessageBody(message);
+            messageSentStatusDao.add(messageSentStatus);
             System.out.println(msg);
         }
         System.out.println("Now Sleeping - Hit <enter> to terminate.");

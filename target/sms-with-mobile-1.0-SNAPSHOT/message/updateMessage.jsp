@@ -17,8 +17,11 @@
             </div>
 
             <div class="row form-row" style="margin-top: 10px">
-                <label>Message Title</label>
-                <textarea rows="5" cols="40" name="messageBody" class="form-control"> ${messageTemplate.messageBody}</textarea>
+                <label>Message Body</label>
+                <textarea id="post" rows="5" cols="40" name="messageBody" class="form-control"> ${messageTemplate.messageBody}</textarea>
+                <p>
+                <span>characters remaining: <span id="rem_post" title="500"></span></span>
+            </p>
             </div>
             <input style="margin-top: 10px" type="submit" value="Update" class="btn btn-primary"/>
         </form>
@@ -26,16 +29,37 @@
 </div>
 
 
+
+<%--Message Count--%>
+<script>
+    $(".form-control").keyup(function () {
+        var cmax = $("#rem_" + $(this).attr("id")).attr("title");
+
+        if ($(this).val().length >= cmax) {
+            $(this).val($(this).val().substr(0, cmax));
+        }
+
+        $("#rem_" + $(this).attr("id")).text(cmax - $(this).val().length);
+
+    });
+</script>
+
+
+
 <script>
     function validateform(){
+        reWhiteSpace = new RegExp(/^\s+$/);
         var mtitle=document.myform.title.value;
         var mbody=document.myform.messageBody.value;
-        if (mtitle==null || mtitle==""){
+        if (mtitle==null || mtitle==''|| mtitle.length==0){
             alert("Please Enter Message Title");
             return false;
         }
-        if(mbody.length>160){
-            alert("Cannot accept more than 160 Character.");
+        if(mbody.length>501){
+            alert("Cannot accept more than 500 Character.");
+            return false;
+        }else if(mbody==null || mbody=='' || mbody.length==0){
+            alert("Message Body Cant be null");
             return false;
         }
     }

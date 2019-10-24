@@ -143,6 +143,8 @@ public class StudentDaoImpl implements StudentDao {
                 Student student = new Student();
                 student.setId(resultSet.getInt("id"));
                 student.setParentPhoneNumber(resultSet.getString("parent_phone_number"));
+                student.setParentName(resultSet.getString("parent_name"));
+
                 students.add(student);
             }
             return students;

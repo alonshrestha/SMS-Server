@@ -5,7 +5,7 @@
         <div class="card">
             <h5 class="card-header font-weight-bold" style="background-color: black;color: white;text-align:center;">Grades</h5>
             <div class="card-body" style="text-align:center;">
-                <h5 class="card-title font-weight-bold text-info" style="color: #cc3612 !important">19,500</h5>
+                <h5 class="card-title font-weight-bold text-info" style="color: #cc3612 !important">${gradeCount}</h5>
             </div>
         </div>
     </div>
@@ -13,7 +13,7 @@
         <div class="card">
             <h5 class="card-header font-weight-bold" style="background-color: black;color: white;text-align:center;">Templates</h5>
             <div class="card-body" style="text-align:center;">
-                <h5 class="card-title font-weight-bold text-info" style="color: #cc3612 !important">19,500</h5>
+                <h5 class="card-title font-weight-bold text-info" style="color: #cc3612 !important">${messageTemplateCount}</h5>
             </div>
         </div>
     </div>
@@ -31,7 +31,7 @@
         <div class="card">
             <h5 class="card-header font-weight-bold" style="background-color: black;color: white;text-align:center;">Messages Sent</h5>
             <div class="card-body" style="text-align:center;">
-                <h5 class="card-title font-weight-bold text-info" style="color: #cc3612 !important">19,500</h5>
+                <h5 class="card-title font-weight-bold text-info" style="color: #cc3612 !important">${messageSentStatusCount}</h5>
             </div>
         </div>
     </div>

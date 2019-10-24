@@ -1,5 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="np.com.alon.enumlist.HttpRequestList" %>
+<%@ page import="np.com.alon.dao.GradeDao" %>
+<%@ page import="np.com.alon.DaoImpl.GradeDaoImpl" %>
 
 <jsp:include page="../headers/header.jsp"/>
 <div class="main">
@@ -16,6 +18,7 @@
                 <td>Last name</td>
                 <td>Parent Name</td>
                 <td>Parent phone no</td>
+                <td>Grade</td>
                 <td>Action</td>
             </tr>
             <c:forEach items="${studentList}" varStatus="i"  var="s">
@@ -25,6 +28,7 @@
                     <td>${s.lastName}</td>
                     <td>${s.parentName}</td>
                     <td>${s.parentPhoneNumber}</td>
+                    <td>${s.gradeName}</td>
                     <td>
                         <a href="${pageContext.request.contextPath}/students?action=${HttpRequestList.UPDATE.toString()}&id=${s.id}"
                            class="btn btn-success"

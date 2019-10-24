@@ -57,20 +57,10 @@ public class ConnectionPortController  extends HttpServlet {
             connectionPort.setByteLimit(req.getParameter("byteLimit"));
             connectionPort.setId(Integer.parseInt(req.getParameter("id")));
             connectionPortDao.update(connectionPort);
-            Sms1Sender sms1Sender = new Sms1Sender();
-            try {
-                sms1Sender.openPort();
-            } catch (GatewayException e) {
-                e.printStackTrace();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (SMSLibException e) {
-                e.printStackTrace();
-            }
         }
 
         ConnectionPort connectionPort = connectionPortDao.findById(1);
         req.setAttribute("connectionPort", connectionPort);
-        req.getRequestDispatcher("connectionPort/main.jsp").forward(req,resp);
+        req.getRequestDispatcher("connectionPort/index.jsp").forward(req,resp);
     }
 }
